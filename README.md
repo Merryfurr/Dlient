@@ -1,35 +1,19 @@
-Update
-==================
-
-Desurium had been forked and relicensed under LGPL v2.1 and thus the Desirum repository was currently not being actively developed by Desura or Lindenlab. 
-
-This repository has been left under the GPL v3 license and is still free to be used by all under the terms of the license.
-
-On November 1, 2014, Bad Juju Games acquired Desura from LindenLab, and is investigating options for the client, including (but not limited to) returning to a full GPL v3 license. 
-
-If you would like the most up-to-date LGPL codebase, please visit https://github.com/desura/desura-app
-
-We hope to update the community on the officially supported client in the near future. 
-
-
-
 Content
 ==================
 
- * Desura
- * Build Desura on Linux
- * Build Desura on Windows
+ * Dlient
+ * Build Dlient on Linux
+ * Build Dlient on Windows
  * Special notes for advanced users
  * Closing Remarks
 
-Desura
+Dlient
 ===================
 
-Desura is a gaming client that allows users to one click download and install games and game modification.
-For more information, visit http://www.moddb.com/groups/desura/forum/thread/open-sourcing-desura
+Dlient is a gaming client that allows users to one click download and install games and game modification.
 
 
-Build Desura on Linux
+Build Dlient on Linux
 ===================
 
 Dependencies
@@ -80,11 +64,11 @@ or you can build DEB package:
 
 or you can build RPM package:
 
-    ./build_desura.sh pack_rpm
+    ./build_desurat.sh pack_rpm
 
 Finally run Desurium using:
 
-    ./install/desura
+    ./install/delient
 
 or install created DEB or RPM package
 
@@ -92,15 +76,15 @@ For informations on advanced arguments of the build script, run:
 
     ./build_desura.sh help
 
-Build Desura on Windows
+Build Dlient on Windows
 =====================
 
 Download and install:
 
  * Svn http://www.sliksvn.com/en/download or http://tortoisesvn.net/downloads.html
- * Msvc 2013 or higher (as C++11 features are in use)
+ * Msvc 2015 or higher (as C++11 features are in use)
  * Python 2.7 x86 http://www.python.org/getit/
- * CMake 2.8 http://www.cmake.org/
+ * CMake 3.0 or higher http://www.cmake.org/
  * Patch either from msysGit or git bash
  * (Optional) Windows DirectX 9 SDK for the CEF build https://www.microsoft.com/en-us/download/details.aspx?id=6812
 
@@ -110,7 +94,7 @@ Note: Make sure you add svn and python to your environment PATH
 
 Open a 32bit cmd.exe with env vars set up by vc or other scripts (so we have a full build environment) and run:
 
-    ./build_desura.bat
+    ./build_dlient.bat
 
 wait
 
@@ -119,7 +103,7 @@ wait
 
 Open a 32bit cmd.exe with env vars set up by vc or other scripts (so we have a full build environment) and run:
 
-    ./build_desura_vis.bat
+    ./build_dlient_vis.bat
 	
 * Set BUILD_ALL as startup project
 * In properties for BUILD_ALL set debugging options:
@@ -130,10 +114,17 @@ Open a 32bit cmd.exe with env vars set up by vc or other scripts (so we have a f
  
 Should be able to run and debug Desura now.
 
+Build Dlient on Mac
+=====================
+Please go to branch apple3, you can find out how to compile it.
+
+WARNING: IT IS UNDER HEAVY DEVELOPMENT!
+
+
 Special notes for advanced users
 =====================
 
-Desura is using the cmake build system for configuration on prject files for several build systems (make, VS, nmake, ...).
+Dlient is using the cmake build system for configuration on prject files for several build systems (make, VS, nmake, ...).
 At the top of CMakeFile.txt is a documented list of options
 
 a "normal" way to configure cmake would be something like this:
@@ -154,4 +145,4 @@ a "normal" way to configure cmake would be something like this:
 Closing Remarks
 =====================
 
-If you need help, want to give some suggestions or just want to talk, feel free to join our IRC channel #desura on irc.freenode.net.
+If you need help, want to give some suggestions or just want to talk, feel free to join our IRC channel #dlient on irc.freenode.net.

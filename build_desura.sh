@@ -21,7 +21,7 @@ compile_cef() {
 }
 
 compile_desurium() {
-	echo "Compiling desurium..."
+	echo "Compiling delient..."
 	if [ ! -d "build" ] ; then
 		mkdir build
 	fi
@@ -81,7 +81,7 @@ pack() {
 
 case "$@" in
 	"help" )
-		echo "\"desurium\" refers to the actual client."
+		echo "\"delient\" refers to the actual client."
 		echo "\"cef\" is Chormium Embedded Framework, a runtime dependency."
 		echo "\"all\" refers to both."
 		echo ""
@@ -177,5 +177,5 @@ if [ -f "install/lib/desura" ] ; then #desura has been build
 		echo "Please make sure to have cef compiled (run './build_desura.sh compile_cef') if you want to run Desura."
 	fi
 else # desurium not build
-	echo "Please make sure to have desurium compiled (run './build_desura.sh compile_desurium') if you want to run Desura."
+	echo "Please make sure to have delient compiled (run './build_desura.sh compile_desurium') if you want to run Desura."
 fi
